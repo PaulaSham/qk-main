@@ -1,8 +1,8 @@
 // import React from 'react'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-import { registerMicroApps, start } from 'qiankun'
-import render from './render'
+import { registerMicroApps, setDefaultMountApp, start } from 'qiankun'
+import render from './main/render'
 
 render({ loading: true })
 
@@ -19,7 +19,7 @@ registerMicroApps([
     activeRule: '/qkm',
   },
 ])
-
+// setDefaultMountApp('/qkm')
 start()
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Login from './components/Login'
+import Login from '../components/Login'
+import MainRouter from './route'
 
 interface IRender {
   loading: boolean
@@ -14,6 +15,7 @@ function Render(props: IRender) {
       {loading && <h1>loading....</h1>}
       <div>always here</div>
       <Login />
+      <MainRouter />
       <div id="subapp-viewport" />
     </>
   )
